@@ -46,7 +46,6 @@ export default function Hero() {
                     <Img
                         maxWidth="417px"
                         mb="-130px"
-                        transform="rotate(10deg)"
                         src="/images/airplane.svg"
                     />
                 </Flex>
