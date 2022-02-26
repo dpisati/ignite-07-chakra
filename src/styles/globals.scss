@@ -1,0 +1,18 @@
+.swiper {
+    --swiper-navigation-color: #ffba08 !important;
+    --swiper-theme-color: #ffba08 !important;
+    --swiper-pagination-bullet-width: 16px !important;
+    --swiper-pagination-bullet-height: 16px !important;
+    --swiper-pagination-bullet-inactive-color: #999999 !important;
+}
+
+.swiper-button-next {
+    right: 50px !important;
+}
+.swiper-button-prev {
+    left: 50px !important;
+}
+
+.swiper-pagination {
+    margin-bottom: 14px;
+}

@@ -16,6 +16,12 @@ export default class Document extends NextDocument {
                         href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;600&family=Poppins:wght@400;500;600;700&display=swap"
                         rel="stylesheet"
                     />
+                    <meta charSet="utf-8" />
+                    <link
+                        rel="shortcut icon"
+                        href="/images/favicon.ico"
+                        type="image/ico"
+                    />
                 </Head>
                 <body>
                     <ColorModeScript

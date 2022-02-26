@@ -21,8 +21,7 @@ export const theme = extendTheme({
             '50': '#eeeef2',
         },
         worldTrip: {
-            highlight: '#FFBA08',
-            hightlight50: '#80FFBA08',
+            primary: '#FFBA08',
             dark: {
                 black: '#000000',
                 text: '#47585B',
@@ -33,7 +32,6 @@ export const theme = extendTheme({
                 white: '#FFFFFF',
                 text: '#F5F8FA',
                 info: '#DADADA',
-                info50: '#80DADADA',
             },
         },
     },
@@ -45,12 +43,12 @@ export const theme = extendTheme({
         global: (props) => ({
             body: {
                 bg: mode(
-                    'worldTrip.light.white',
-                    'worldTrip.dark.black'
+                    'worldTrip.dark.black',
+                    'worldTrip.light.white'
                 )(props),
                 color: mode(
-                    'worldTrip.dark.text',
-                    'worldTrip.light.text'
+                    'worldTrip.light.text',
+                    'worldTrip.dark.text'
                 )(props),
             },
         }),
