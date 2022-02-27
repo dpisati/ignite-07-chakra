@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Europe",
+        "description": "Europe is, by convention, one of the six continents of the world. Comprising the western Eurasian peninsula, Europe is generally divided from Asia on the east by the watershed of the Ural Mountains, the Ural River, the Caspian Sea, the Caucasus, and the Black Sea on the southeast.",
+        "numberOfContries": "50",
+        "languages": "60",
+        "numberOfCities": "27",
+        "totalCities": "+100",
+        "tooltip": "Only 27 available",
+        "cities": [
+            {
+                "title": "London",
+                "country": "United Kingdom",
+                "flagImgPath": "images/flags/uk.png"
+            },
+            {
+                "title": "Paris",
+                "country": "France",
+                "flagImgPath": "images/flags/france.png"
+            },
+            {
+                "title": "Rome",
+                "country": "Italy",
+                "flagImgPath": "images/flags/italy.png"
+            },
+            {
+                "title": "Prage",
+                "country": "Czech Republic",
+                "flagImgPath": "images/flags/czech.png"
+            },
+            {
+                "title": "Amsterdam",
+                "country": "Holand",
+                "flagImgPath": "images/flags/holand.png"
+            }
+        ]
+    }
+]

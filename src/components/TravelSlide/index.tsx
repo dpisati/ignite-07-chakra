@@ -1,4 +1,5 @@
 import { Box, Flex, Img, Text } from '@chakra-ui/react';
+import Link from 'next/link';
 import React from 'react';
 
 interface TravelSlide {
@@ -32,13 +33,18 @@ export default function TravelSlide({
                 justify="center"
                 direction="column"
             >
-                <Text
-                    color="worldTrip.light.text"
-                    fontSize="48px"
-                    fontWeight="bold"
-                >
-                    {title}
-                </Text>
+                <Link href={`/destinations/${title.toLowerCase()}`}>
+                    <Text
+                        color="worldTrip.light.text"
+                        fontSize="48px"
+                        fontWeight="bold"
+                        _hover={{
+                            cursor: 'pointer',
+                        }}
+                    >
+                        {title}
+                    </Text>
+                </Link>
                 <Text
                     color="worldTrip.light.text"
                     fontSize="24px"

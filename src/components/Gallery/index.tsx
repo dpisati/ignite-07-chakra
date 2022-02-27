@@ -11,6 +11,39 @@ import { Pagination } from 'swiper';
 import TravelSlide from '../TravelSlide';
 
 export default function Gallery() {
+    const cities = [
+        {
+            title: 'Europe',
+            subtitle: 'Enjoy the old continent',
+            backgroundPath: '/images/cities/europe.png',
+        },
+        {
+            title: 'Amsterdam',
+            subtitle: 'Enjoy the vibe.',
+            backgroundPath: '/images/cities/amsterdam.png',
+        },
+        {
+            title: 'London',
+            subtitle: 'Enjoy the best of England.',
+            backgroundPath: '/images/cities/london.png',
+        },
+        {
+            title: 'Paris',
+            subtitle: 'Enjoy the most romantic city.',
+            backgroundPath: '/images/cities/paris.png',
+        },
+        {
+            title: 'Prage',
+            subtitle: 'Enjoy the not obvious.',
+            backgroundPath: '/images/cities/prage.png',
+        },
+        {
+            title: 'Rome',
+            subtitle: 'Enjoy the best cusine.',
+            backgroundPath: '/images/cities/rome.png',
+        },
+    ];
+
     return (
         <Box w="100%" h="100%">
             <Swiper
@@ -27,20 +60,15 @@ export default function Gallery() {
                 navigation={true}
                 modules={[Pagination, Navigation]}
             >
-                <SwiperSlide>
-                    <TravelSlide
-                        title="Europe"
-                        subtitle="The oldest continent."
-                        backgroundPath="/images/cities/europe.png"
-                    />
-                </SwiperSlide>
-                <SwiperSlide>
-                    <TravelSlide
-                        title="Europe"
-                        subtitle="The oldest continent."
-                        backgroundPath="/images/cities/europe.png"
-                    />
-                </SwiperSlide>
+                {cities.map((city, index) => (
+                    <SwiperSlide key={index}>
+                        <TravelSlide
+                            title={city.title}
+                            subtitle={city.subtitle}
+                            backgroundPath={city.backgroundPath}
+                        />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </Box>
     );
