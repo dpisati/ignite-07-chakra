@@ -22,26 +22,6 @@ export default function Gallery() {
             subtitle: 'Enjoy the vibe.',
             backgroundPath: '/images/cities/amsterdam.png',
         },
-        {
-            title: 'London',
-            subtitle: 'Enjoy the best of England.',
-            backgroundPath: '/images/cities/london.png',
-        },
-        {
-            title: 'Paris',
-            subtitle: 'Enjoy the most romantic city.',
-            backgroundPath: '/images/cities/paris.png',
-        },
-        {
-            title: 'Prage',
-            subtitle: 'Enjoy the not obvious.',
-            backgroundPath: '/images/cities/prage.png',
-        },
-        {
-            title: 'Rome',
-            subtitle: 'Enjoy the best cusine.',
-            backgroundPath: '/images/cities/rome.png',
-        },
     ];
 
     return (

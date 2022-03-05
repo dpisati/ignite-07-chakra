@@ -12,12 +12,15 @@ import {
     Img,
     SimpleGrid,
     Text,
+    Tooltip,
 } from '@chakra-ui/react';
+import CityCard from '../../components/CityCard';
 
 interface City {
     title: string;
     country: string;
     flagImgPath: string;
+    thumbImg: string;
 }
 
 interface Destination {
@@ -148,12 +151,23 @@ export default function Destination() {
                             mt="-20px"
                         >
                             cities +100
-                            <Icon
-                                as={RiInformationLine}
-                                ml="6px"
-                                fontSize="20"
-                                fill="worldTrip.light.info"
-                            />
+                            <Tooltip
+                                hasArrow
+                                label="Only 27 available on WorldTrip"
+                                bg="gray.100"
+                                color="gray.400"
+                                fontSize="14px"
+                                shouldWrapChildren
+                                px="12px"
+                                py="6px"
+                            >
+                                <Icon
+                                    as={RiInformationLine}
+                                    ml="6px"
+                                    fontSize="20"
+                                    fill="worldTrip.light.info"
+                                />
+                            </Tooltip>
                         </Text>
                     </Flex>
                 </HStack>
@@ -177,17 +191,17 @@ export default function Destination() {
                 my="80px"
                 maxWidth="1170px"
                 minChildWidth="256px"
+                gap="40px"
             >
-                <Flex>
-                    <Img src="/images/cities/thumbs/london.png" alt="London" />
-                    <Flex>
-                        <Flex>
-                            <Text>London</Text>
-                            <Text>United Kindon</Text>
-                        </Flex>
-                        <Img src="/images/cities/thumbs/london.png" />
-                    </Flex>
-                </Flex>
+                {city.cities.map((city) => (
+                    <CityCard
+                        key={city.title}
+                        city={city.title}
+                        country={city.country}
+                        thumbImg={city.thumbImg}
+                        flagImagePath={city.flagImgPath}
+                    />
+                ))}
             </SimpleGrid>
         </>
     );

@@ -11,27 +11,73 @@
             {
                 "title": "London",
                 "country": "United Kingdom",
-                "flagImgPath": "images/flags/uk.png"
+                "flagImgPath": "/images/flags/england.png",
+                "thumbImg": "/images/cities/thumbs/london.png"
             },
             {
                 "title": "Paris",
                 "country": "France",
-                "flagImgPath": "images/flags/france.png"
+                "flagImgPath": "/images/flags/france.png",
+                "thumbImg": "/images/cities/thumbs/paris.png"
             },
             {
                 "title": "Rome",
                 "country": "Italy",
-                "flagImgPath": "images/flags/italy.png"
+                "flagImgPath": "/images/flags/italy.png",
+                "thumbImg": "/images/cities/thumbs/rome.png"
             },
             {
                 "title": "Prage",
                 "country": "Czech Republic",
-                "flagImgPath": "images/flags/czech.png"
+                "flagImgPath": "/images/flags/czech.png",
+                "thumbImg": "/images/cities/thumbs/prage.png"
             },
             {
                 "title": "Amsterdam",
                 "country": "Holand",
-                "flagImgPath": "images/flags/holand.png"
+                "flagImgPath": "/images/flags/holand.png",
+                "thumbImg": "/images/cities/thumbs/amsterdam.png"
+            }
+        ]
+    },
+    {
+        "title": "Latin America",
+        "description": "Latin America is the portion of the Americas comprising countries and regions where Romance languages—languages that derived from Latin—such as Spanish, Portuguese, and French are predominantly spoken. The term is used for those places once ruled under the Spanish, Portuguese, and French empires.",
+        "numberOfContries": "20",
+        "languages": "120",
+        "numberOfCities": "+2000",
+        "totalCities": "+2000",
+        "tooltip": "Only 12 available",
+        "cities": [
+            {
+                "title": "São Paulo",
+                "country": "Brazil",
+                "flagImgPath": "/images/flags/england.png",
+                "thumbImg": "/images/cities/thumbs/london.png"
+            },
+            {
+                "title": "Mexico City",
+                "country": "Mexico",
+                "flagImgPath": "/images/flags/france.png",
+                "thumbImg": "/images/cities/thumbs/paris.png"
+            },
+            {
+                "title": "Lima",
+                "country": "Peru",
+                "flagImgPath": "/images/flags/italy.png",
+                "thumbImg": "/images/cities/thumbs/rome.png"
+            },
+            {
+                "title": "Bogotá",
+                "country": "Colombia",
+                "flagImgPath": "/images/flags/czech.png",
+                "thumbImg": "/images/cities/thumbs/prage.png"
+            },
+            {
+                "title": "Santiago",
+                "country": "Chile",
+                "flagImgPath": "/images/flags/holand.png",
+                "thumbImg": "/images/cities/thumbs/amsterdam.png"
             }
         ]
     }

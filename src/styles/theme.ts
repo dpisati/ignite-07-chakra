@@ -42,10 +42,7 @@ export const theme = extendTheme({
     styles: {
         global: (props) => ({
             body: {
-                bg: mode(
-                    'worldTrip.dark.black',
-                    'worldTrip.light.white'
-                )(props),
+                bg: mode('worldTrip.dark.black', 'worldTrip.light.text')(props),
                 color: mode(
                     'worldTrip.light.text',
                     'worldTrip.dark.text'
