@@ -10,20 +10,9 @@ import { Box } from '@chakra-ui/react';
 import { Pagination } from 'swiper';
 import TravelSlide from '../TravelSlide';
 
-export default function Gallery() {
-    const cities = [
-        {
-            title: 'Europe',
-            subtitle: 'Enjoy the old continent',
-            backgroundPath: '/images/cities/europe.png',
-        },
-        {
-            title: 'Amsterdam',
-            subtitle: 'Enjoy the vibe.',
-            backgroundPath: '/images/cities/amsterdam.png',
-        },
-    ];
+import cities from '../../../destinations.json';
 
+export default function Gallery() {
     return (
         <Box w="100%" h="100%">
             <Swiper

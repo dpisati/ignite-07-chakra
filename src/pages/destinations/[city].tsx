@@ -30,6 +30,7 @@ interface Destination {
     languages: string;
     numberOfCities: string;
     totalCities: string;
+    backgroundPath: string;
     tooltip: string;
     cities: City[];
 }
@@ -54,7 +55,7 @@ export default function Destination() {
             <Header />
             <Flex w="100vw" h="500px" position="relative">
                 <Img
-                    src="/images/cities/amsterdamBanner.png"
+                    src={city.backgroundPath}
                     alt="city banner"
                     objectFit="cover"
                     w="100vw"
@@ -94,11 +95,7 @@ export default function Destination() {
                     color="worldTrip.dark.text"
                     textAlign="justify"
                 >
-                    Europe is, by convention, one of the six continents of the
-                    world. Comprising the western Eurasian peninsula, Europe is
-                    generally divided from Asia on the east by the watershed of
-                    the Ural Mountains, the Ural River, the Caspian Sea, the
-                    Caucasus, and the Black Sea on the southeast.
+                    {city.description}
                 </Text>
                 <HStack display="flex" align="center" justify="center" gap={5}>
                     <Flex direction="column" align="center" justify="center">
@@ -107,7 +104,7 @@ export default function Destination() {
                             color="worldTrip.primary"
                             fontWeight="semibold"
                         >
-                            50
+                            {city.numberOfContries}
                         </Text>
                         <Text
                             fontSize="28px"
@@ -124,7 +121,7 @@ export default function Destination() {
                             color="worldTrip.primary"
                             fontWeight="semibold"
                         >
-                            60
+                            {city.languages}
                         </Text>
                         <Text
                             fontSize="28px"
@@ -141,7 +138,7 @@ export default function Destination() {
                             color="worldTrip.primary"
                             fontWeight="semibold"
                         >
-                            27
+                            {city.numberOfCities}
                         </Text>
 
                         <Text
@@ -150,10 +147,10 @@ export default function Destination() {
                             fontWeight="semibold"
                             mt="-20px"
                         >
-                            cities +100
+                            cities {city.totalCities}
                             <Tooltip
                                 hasArrow
-                                label="Only 27 available on WorldTrip"
+                                label={`Only ${city.numberOfCities} available on WorldTrip`}
                                 bg="gray.100"
                                 color="gray.400"
                                 fontSize="14px"
@@ -180,7 +177,7 @@ export default function Destination() {
                     fontWeight="medium"
                     mb="40px"
                 >
-                    Cities +100
+                    Cities {city.totalCities}
                 </Text>
             </Box>
 

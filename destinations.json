@@ -1,12 +1,14 @@
 [
     {
         "title": "Europe",
+        "subtitle": "Enjoy the old continent",
         "description": "Europe is, by convention, one of the six continents of the world. Comprising the western Eurasian peninsula, Europe is generally divided from Asia on the east by the watershed of the Ural Mountains, the Ural River, the Caspian Sea, the Caucasus, and the Black Sea on the southeast.",
         "numberOfContries": "50",
         "languages": "60",
         "numberOfCities": "27",
         "totalCities": "+100",
         "tooltip": "Only 27 available",
+        "backgroundPath": "/images/cities/europePage.png",
         "cities": [
             {
                 "title": "London",
@@ -41,43 +43,45 @@
         ]
     },
     {
-        "title": "Latin America",
+        "title": "America",
+        "subtitle": "Explorer the heppiest continent",
         "description": "Latin America is the portion of the Americas comprising countries and regions where Romance languages—languages that derived from Latin—such as Spanish, Portuguese, and French are predominantly spoken. The term is used for those places once ruled under the Spanish, Portuguese, and French empires.",
         "numberOfContries": "20",
         "languages": "120",
-        "numberOfCities": "+2000",
+        "numberOfCities": "12",
         "totalCities": "+2000",
         "tooltip": "Only 12 available",
+        "backgroundPath": "/images/cities/latinAmericaPage.png",
         "cities": [
             {
                 "title": "São Paulo",
                 "country": "Brazil",
-                "flagImgPath": "/images/flags/england.png",
-                "thumbImg": "/images/cities/thumbs/london.png"
+                "flagImgPath": "/images/flags/brazil.png",
+                "thumbImg": "/images/cities/thumbs/saopaulo.png"
             },
             {
                 "title": "Mexico City",
                 "country": "Mexico",
-                "flagImgPath": "/images/flags/france.png",
-                "thumbImg": "/images/cities/thumbs/paris.png"
+                "flagImgPath": "/images/flags/mexico.png",
+                "thumbImg": "/images/cities/thumbs/mexicocity.png"
             },
             {
                 "title": "Lima",
                 "country": "Peru",
-                "flagImgPath": "/images/flags/italy.png",
-                "thumbImg": "/images/cities/thumbs/rome.png"
+                "flagImgPath": "/images/flags/peru.png",
+                "thumbImg": "/images/cities/thumbs/lima.png"
             },
             {
                 "title": "Bogotá",
                 "country": "Colombia",
-                "flagImgPath": "/images/flags/czech.png",
-                "thumbImg": "/images/cities/thumbs/prage.png"
+                "flagImgPath": "/images/flags/colombia.png",
+                "thumbImg": "/images/cities/thumbs/bogota.png"
             },
             {
                 "title": "Santiago",
                 "country": "Chile",
-                "flagImgPath": "/images/flags/holand.png",
-                "thumbImg": "/images/cities/thumbs/amsterdam.png"
+                "flagImgPath": "/images/flags/chile.png",
+                "thumbImg": "/images/cities/thumbs/santiago.png"
             }
         ]
     }
